@@ -1,11 +1,7 @@
-﻿Clé Aciah-Linux à partir d’une sauvegarde
+﻿Créer une Clé Aciah-Linux à partir de Aciah-Mint-20-3-img
+ 
 Aciah-Linux est si pratique qu’on peut avoir envie de fournir des clés aux amis
 Il faut disposer d’une clé Clonezilla et d’une clé rapide d’au moins 64 Go
-
-Vérifier d’abord que vous avez bien fait une sauvegarde de votre clef et qu’elle se trouve par exemple dans …. sda5/home/
-
-Si vous voulez réaliser trois copies, placer les trois clés vierges sur un Hub-USB que vous insérerez dans l’ordinateur.
-Prenez toujours des clés USB 3 rapides (environ 130 MB/s)
 
 Insérez la clé Clonezilla avant de lancer l’ordinateur, et lancez l’ordinateur en le faisant démarrer sur la clé.
 Clonezilla se lance
@@ -28,7 +24,7 @@ Ecran4 – à la demande faire : Entrée et puis  CTRL + C
 
 Ecran5 – On arrive au choix de la source, on voit sda1, sda5  et d’autres partitions. Choisir sda5 (si on est sûr que l’image est dans sda5) puis OK
 
-Ecran6 – on arrive à l’explorateur des répertoires de la partition choisie (ici sda5 puisque, ci-dessus, on a : /sda5/home/
+Ecran6 – on arrive à l’explorateur des répertoires de la partition choisie 
 		Cliquer sur /home, puis sur Browse puis OK
 		Cliquer sur la sauvegarde qui s’y trouve, puis sur Done, puis OK
 		Entrée
@@ -43,7 +39,7 @@ Ecran8 	On voit savedisk (ne pas cliquer !), descendre jusqu’à la ligne : 1-
 Ecran9	On arrive à « Sélection du fichier à restaurer ». On re-voit alors le fichier de sauvegarde.
 			OK
 
-Ecran10	On sélectionne les disques cibles par exemple sdc, sdd, sde (les 3 clés qu’on veut créer) en cochant avec la 		barre d’espace.
+Ecran10	On sélectionne le disque cible par exemple sdc, sdd, sde en cochant avec la barre d’espace.
 			OK
 
 Ecran11	Paramètres avancés : conserver les fichiers cochés, et cocher  icds « Ne pas vérifier »,  avec la barre d’espace.
@@ -62,6 +58,6 @@ On vous demande alors de faire « entrée » - puis de taper la lettre  ‘y�
 
 Laisser faire !
 
-Quand c’est terminé, arrêter l’ordinateur et, ensuite, retirer les clés. Tester les nouvelles clés et notamment y faire les dernières mises à jour si nécessaire.
+Quand c’est terminé, arrêter l’ordinateur et, ensuite, retirer la clé. Tester la nouvelle clé et notamment y faire les dernières mises à jour si nécessaire.
 
 Vérifier aussi, avec gparted, les partitions se trouvant sur les clés.
